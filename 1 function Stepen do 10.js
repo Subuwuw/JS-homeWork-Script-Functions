@@ -1,9 +1,15 @@
 /*
- *                    1. Написать скриптик, который сосчитает и выведет результат от возведения 2 в степень 10, начиная со степени 1
+ *                    1*. Преобразовать 1 задачу в функцию, принимающую на вход степень, в которую будет возводиться число 2
  */
+let baseNumb; // число которое будет возводиться в степень
+let exponentNumb; // число в какую степень будет возводиться
 
-const baseNum = 2;
-for (i = 1; i <= 10; i++) {
-  result = Math.pow(baseNum, i);
-  console.log(result);
+function calc(baseNumb, exponentNumb) {
+  let round;
+  for (round = 1; round <= exponentNumb; round++) {
+    result = Math.pow(baseNumb, round);
+    console.log(result);
+  }
 }
+
+console.log(calc(2, 10));
