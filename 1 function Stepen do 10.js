@@ -12,4 +12,4 @@ function calc(baseNumb, exponentNumb) {
   }
 }
 
-console.log(calc(2, 10));
+calc(2, 10);
